@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\zhou_Workspace\1_Dolphin64\2_matlab\V0.2.3\2_VS\1_PlaneBeam_GPU_RealData_V1.1.2\lunwen_20250915\20250915\PlaneBeam_GPU_RealData\bin\x64\Release\PlaneBeam_CUDA_DLL.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\zhou_Workspace\1_Dolphin64\2_matlab\V0.2.3\2_VS\1_PlaneBeam_GPU_RealData_V1.1.2\lunwen_20250915\20250915\PlaneBeam_GPU_RealData\bin\x64\Release\PlaneBeam_GPU_RealData.mexw64</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
