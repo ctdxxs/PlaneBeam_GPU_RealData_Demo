@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术与规格 - Dolphin阵列超声研究平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dolphin阵列超声研究平台</h1>
+        <p>一款面向超声领域科学家的高性能开放式研究平台</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="platform-details.html" class="active">技术与规格</a></li>
+            <li><a href="applications.html">典型应用</a></li>
+            <li><a href="3d-structure.html">3D结构</a></li>
+            <li><a href="software.html">软件平台</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>超快超声脑功能成像</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3>超快超声成像的原理</h3>
+                    <p>摒弃传统超声成像的逐线扫描方式,通过单次发射超声波覆盖整个成像区域,利用超高速采集获取完整的原始回波数据,再通过相干复合等先进算法重建超声图像。</p>
+                    <h3>优势</h3>
+                    <ul>
+                        <li>成像帧率高,可达10000+帧/秒。</li>
+                        <li>高帧率结合高级杂波滤波和噪声抑制技术,大幅提高超声微血流成像的时空分辨率,时空分辨率达到100um/100ms。</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="images/vascular-phantom.png" alt="血管仿体成像图">
+                    <p class="caption">血管仿体成像图</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs">
+            <h2>产品规格</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>通道数</th>
+                        <th>Dolphin 32</th>
+                        <th>Dolphin64 LE</th>
+                        <th>Dolphin 64</th>
+                        <th>Dolphin 128</th>
+                        <th>Dolphin 256</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>发射独立通道</td>
+                        <td>32</td>
+                        <td>64Tx/Rx</td>
+                        <td>64</td>
+                        <td>128</td>
+                        <td>256</td>
+                    </tr>
+                    <tr>
+                        <td>接收独立通道</td>
+                        <td>32</td>
+                        <td>64</td>
+                        <td>64</td>
+                        <td>128</td>
+                        <td>256</td>
+                    </tr>
+                    <tr>
+                        <td>总通道数</td>
+                        <td>128</td>
+                        <td>64</td>
+                        <td>128</td>
+                        <td>128</td>
+                        <td>256</td>
+                    </tr>
+                    <tr>
+                        <td>标准频率范围* (0.5MHz-30 MHz)</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                    <tr>
+                        <td>扩展频率范围* (50kHz-50 MHz)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                    <tr>
+                        <td>外部时钟</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>可选项</td>
+                    </tr>
+                    <tr>
+                        <td>波形可编辑</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                    <tr>
+                        <td>同步及编码器触发</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                     <tr>
+                        <td>图像重建</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                    <tr>
+                        <td>可扩展 I/O 包</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                    <tr>
+                        <td>NDE 软件</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                        <td>√</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">*: 接收频率范围<br>√: 可选的配置或选项</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>中国科学院声学研究所</p>
+        <p>&copy; 2025 Dolphin. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
