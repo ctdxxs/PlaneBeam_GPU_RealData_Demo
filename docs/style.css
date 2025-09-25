@@ -92,6 +92,45 @@ nav ul {
     max-width: 1200px;
 }
 
+/* Language Switcher - Hidden in top right corner */
+.language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.25rem;
+    z-index: 1001;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.language-switcher:hover {
+    opacity: 1;
+}
+
+.lang-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.75rem;
+    backdrop-filter: blur(5px);
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 nav ul li a {
     color: var(--text-light-color);
     text-decoration: none;

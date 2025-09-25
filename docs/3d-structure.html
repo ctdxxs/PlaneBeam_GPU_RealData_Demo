@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三维结构 - minifus功能超声成像平台</title>
+    <title>3D Structure - minifus Functional Ultrasound Imaging Platform</title>
     <link rel="stylesheet" href="style.css">
     <style>
         #viewer-container {
@@ -27,55 +27,61 @@
 </head>
 <body>
     <header>
-        <h1>minifus功能超声成像平台</h1>
-        <p>一款面向超声领域科学家的高性能开放式研究平台</p>
+        <h1>minifus Functional Ultrasound Imaging Platform</h1>
+        <p>A high-performance open research platform for functional ultrasound imaging scientists</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="3d-structure.html" class="active">3D结构</a></li>
-            <li><a href="software.html">软件平台</a></li>
-            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="3d-structure.html" class="active">3D Structure</a></li>
+            <li><a href="software.html">Software Platform</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
+    <!-- Language Switcher - Fixed position -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active" id="lang-en">EN</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn" id="lang-zh">中文</button>
+    </div>
+
     <main>
         <section id="3d-structure">
-            <h2>三维结构</h2>
+            <h2 data-en="3D Structure" data-zh="三维结构">3D Structure</h2>
             <div class="content-grid">
                 <div class="text-content">
-                    <h3>高精度三维结构展示</h3>
-                    <p>本页面展示了minifus平台的三维结构模型。我们能够精确捕捉设备结构的空间细节。</p>
-                    <p>该模型具备以下特点：</p>
+                    <h3 data-en="High-Precision 3D Structure Display" data-zh="高精度三维结构展示">High-Precision 3D Structure Display</h3>
+                    <p data-en="This page showcases the 3D structural model of the minifus platform. We can precisely capture the spatial details of the device structure." data-zh="本页面展示了minifus平台的三维结构模型。我们能够精确捕捉设备结构的空间细节。">This page showcases the 3D structural model of the minifus platform. We can precisely capture the spatial details of the device structure.</p>
+                    <p data-en="The model features the following characteristics:" data-zh="该模型具备以下特点：">The model features the following characteristics:</p>
                     <ul>
-                        <li>结构具备良好的电磁屏蔽能力，抑制外界干扰</li>
-                        <li>设备体积紧凑，占用空间小，适合集成应用</li>
-                        <li>设备结构内部结构化设计，便于维护，支持外壳定制</li>
+                        <li data-en="Structure with excellent electromagnetic shielding capability to suppress external interference" data-zh="结构具备良好的电磁屏蔽能力，抑制外界干扰">Structure with excellent electromagnetic shielding capability to suppress external interference</li>
+                        <li data-en="Compact device size with small footprint, suitable for integrated applications" data-zh="设备体积紧凑，占用空间小，适合集成应用">Compact device size with small footprint, suitable for integrated applications</li>
+                        <li data-en="Internal structured design for easy maintenance and support for custom housing" data-zh="设备结构内部结构化设计，便于维护，支持外壳定制">Internal structured design for easy maintenance and support for custom housing</li>
                     </ul>
-                    <p>您可以在下方的窗口中通过拖动鼠标来旋转、缩放和平移3D模型。</p>
-                    <a href="images/3d_model_archive.zip" download="3d_model_archive.zip" class="button" style="margin-top: 1rem; display: inline-block;">下载结构文件 (.zip)</a>
+                    <p data-en="You can rotate, zoom, and pan the 3D model by dragging the mouse in the window below." data-zh="您可以在下方的窗口中通过拖动鼠标来旋转、缩放和平移3D模型。">You can rotate, zoom, and pan the 3D model by dragging the mouse in the window below.</p>
+                    <a href="images/3d_model_archive.zip" download="3d_model_archive.zip" class="button" style="margin-top: 1rem; display: inline-block;" data-en="Download Structure Files (.zip)" data-zh="下载结构文件 (.zip)">Download Structure Files (.zip)</a>
                 </div>
                 <div id="viewer-container">
-                    <div id="loading-indicator">正在加载3D模型...</div>
+                    <div id="loading-indicator" data-en="Loading 3D model..." data-zh="正在加载3D模型...">Loading 3D model...</div>
                 </div>
             </div>
         </section>
 
         <section id="exploded-view">
-            <h2>内部结构爆炸图</h2>
+            <h2 data-en="Internal Structure Exploded View" data-zh="内部结构爆炸图">Internal Structure Exploded View</h2>
             <div class="content-grid">
                 <div class="image-content">
-                    <img src="images/internal-exploded-view.png" alt="内部结构爆炸图">
-                    <p class="caption">minifus平台内部结构</p>
+                    <img src="images/internal-exploded-view.png" alt="Internal structure exploded view">
+                    <p class="caption" data-en="minifus platform internal structure" data-zh="minifus平台内部结构">minifus platform internal structure</p>
                 </div>
                 <div class="text-content">
-                    <h3>核心部件解析</h3>
-                    <p>通过爆炸视图，可以清晰地观察到minifus平台内部的核心组件布局。每一个部件都经过精心设计和优化，以确保最高的性能和可靠性。</p>
+                    <h3 data-en="Core Component Analysis" data-zh="核心部件解析">Core Component Analysis</h3>
+                    <p data-en="Through the exploded view, the core component layout inside the minifus platform can be clearly observed. Each component has been carefully designed and optimized to ensure the highest performance and reliability." data-zh="通过爆炸视图，可以清晰地观察到minifus平台内部的核心组件布局。每一个部件都经过精心设计和优化，以确保最高的性能和可靠性。">Through the exploded view, the core component layout inside the minifus platform can be clearly observed. Each component has been carefully designed and optimized to ensure the highest performance and reliability.</p>
                     <ul>
-                        <li>多通道收发单元</li>
-                        <li>高精度时钟同步模块</li>
-                        <li>可扩展I/O接口板</li>
+                        <li data-en="Multi-channel transceiver unit" data-zh="多通道收发单元">Multi-channel transceiver unit</li>
+                        <li data-en="High-precision clock synchronization module" data-zh="高精度时钟同步模块">High-precision clock synchronization module</li>
+                        <li data-en="Expandable I/O interface board" data-zh="可扩展I/O接口板">Expandable I/O interface board</li>
                     </ul>
                 </div>
             </div>
@@ -83,7 +89,7 @@
     </main>
 
     <footer>
-        <p>中国科学院声学研究所</p>
+        <p>Institute of Acoustics, Chinese Academy of Sciences</p>
         <p>&copy; 2025 minifus. All Rights Reserved.</p>
     </footer>
 
@@ -187,6 +193,49 @@
         }
 
         init();
+    </script>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en][data-zh]').forEach(element => {
+                element.textContent = element.getAttribute('data-' + lang);
+            });
+            
+            // Update navigation
+            const navItems = {
+                'en': ['Home', '3D Structure', 'Software Platform', 'Contact Us'],
+                'zh': ['首页', '3D结构', '软件平台', '联系我们']
+            };
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach((link, index) => {
+                if (link.textContent !== '') {
+                    link.textContent = navItems[lang][index];
+                }
+            });
+            
+            // Update page title and header
+            if (lang === 'zh') {
+                document.title = '三维结构 - minifus功能超声成像平台';
+                document.querySelector('h1').textContent = 'minifus功能超声成像平台';
+                document.querySelector('header p').textContent = '一款面向功能超声成像领域科学家的高性能开放式研究平台';
+            } else {
+                document.title = '3D Structure - minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('h1').textContent = 'minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('header p').textContent = 'A high-performance open research platform for functional ultrasound imaging scientists';
+            }
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language to English
+            switchLanguage('en');
+        });
     </script>
 </body>
 </html>

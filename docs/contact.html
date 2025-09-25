@@ -1,74 +1,109 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - minifus功能超声成像平台</title>
+    <title>Contact Us - minifus Functional Ultrasound Imaging Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>minifus功能超声成像平台</h1>
-        <p>一款面向超声领域科学家的高性能开放式研究平台</p>
+        <h1>minifus Functional Ultrasound Imaging Platform</h1>
+        <p>A high-performance open research platform for functional ultrasound imaging scientists</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="3d-structure.html">3D结构</a></li>
-            <li><a href="software.html">软件平台</a></li>
-            <li><a href="contact.html" class="active">联系我们</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="3d-structure.html">3D Structure</a></li>
+            <li><a href="software.html">Software Platform</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
     </nav>
 
+    <!-- Language Switcher - Fixed position -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active" id="lang-en">EN</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn" id="lang-zh">中文</button>
+    </div>
+
     <main>
         <section id="contact">
-            <h2>联系我们</h2>
-            <p>如果您对我们的产品感兴趣或有任何疑问，请通过以下方式联系我们。</p>
+            <h2 data-en="Contact Us" data-zh="联系我们">Contact Us</h2>
+            <p data-en="If you are interested in our products or have any questions, please contact us through the following methods." data-zh="如果您对我们的产品感兴趣或有任何疑问，请通过以下方式联系我们。">If you are interested in our products or have any questions, please contact us through the following methods.</p>
             <div class="content-grid">
                 <div class="text-content">
-                    <h3>联系信息</h3>
-                    <p><strong>地 址:</strong> 中国北京市海淀区北四环西路21号</p>
-                    <p><strong>电 话:</strong> +86-15101686933</p>
-                    <p><strong>邮 箱:</strong> zhouerleiyx@outlook.com</p>
-                    <p><strong>联系人:</strong> 周老师</p>
-                    <div class="qr-codes">
-                        <div class="qr-code">
-                            <img src="images/wechat-qr.png" alt="微信二维码">
-                            <p>微信</p>
-                        </div>
-                        <div class="qr-code">
-                            <img src="images/x-qr.png" alt="X 二维码">
-                            <p>X (Twitter)</p>
-                        </div>
-                    </div>
+                    <h3 data-en="Contact Information" data-zh="联系信息">Contact Information</h3>
+                    <p><strong data-en="Address:" data-zh="地址：">Address:</strong> <span data-en="No. 21, Beisihuan West Road, Haidian District, Beijing, China" data-zh="中国北京市海淀区北四环西路21号">No. 21, Beisihuan West Road, Haidian District, Beijing, China</span></p>
+                    <p><strong data-en="Phone:" data-zh="电话：">Phone:</strong> +86-13071133268</p>
+                    <p><strong data-en="Email:" data-zh="邮箱：">Email:</strong> wuwentao@mail.ioa.ac.cn</p>
+                    <p><strong data-en="Contact Person:" data-zh="联系人：">Contact Person:</strong> <span data-en="Dr. Wu" data-zh="吴老师">Dr. Wu</span></p>
                 </div>
-                <div class="text-content">
-                    <h3>发送消息</h3>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">姓名:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">邮箱:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">消息:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="button">发送</button>
-                    </form>
+                <div class="image-content">
+                    <h3 data-en="Location" data-zh="位置">Location</h3>
+                    <div style="width: 100%; height: 300px; border-radius: 8px; overflow: hidden;">
+                        <iframe 
+                            src="https://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E5%A3%B0%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%89%80" 
+                            width="100%" 
+                            height="100%" 
+                            frameborder="0" 
+                            style="border:0;"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="caption" data-en="Institute of Acoustics, Chinese Academy of Sciences Location" data-zh="中国科学院声学研究所位置">Institute of Acoustics, Chinese Academy of Sciences Location</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>中国科学院声学研究所</p>
+        <p>Institute of Acoustics, Chinese Academy of Sciences</p>
         <p>&copy; 2025 minifus. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en][data-zh]').forEach(element => {
+                element.textContent = element.getAttribute('data-' + lang);
+            });
+            
+            // Update navigation
+            const navItems = {
+                'en': ['Home', '3D Structure', 'Software Platform', 'Contact Us'],
+                'zh': ['首页', '3D结构', '软件平台', '联系我们']
+            };
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach((link, index) => {
+                if (link.textContent !== '') {
+                    link.textContent = navItems[lang][index];
+                }
+            });
+            
+            // Update page title and header
+            if (lang === 'zh') {
+                document.title = '联系我们 - minifus功能超声成像平台';
+                document.querySelector('h1').textContent = 'minifus功能超声成像平台';
+                document.querySelector('header p').textContent = '一款面向功能超声成像领域科学家的高性能开放式研究平台';
+            } else {
+                document.title = 'Contact Us - minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('h1').textContent = 'minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('header p').textContent = 'A high-performance open research platform for functional ultrasound imaging scientists';
+            }
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language to English
+            switchLanguage('en');
+        });
+    </script>
 
 </body>
 </html>

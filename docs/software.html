@@ -1,55 +1,130 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>软件平台 - minifus功能超声成像平台</title>
+    <title>Software Platform - minifus Functional Ultrasound Imaging Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>minifus功能超声成像平台</h1>
-        <p>一款面向超声领域科学家的高性能开放式研究平台</p>
+        <h1>minifus Functional Ultrasound Imaging Platform</h1>
+        <p>A high-performance open research platform for functional ultrasound imaging scientists</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="3d-structure.html">3D结构</a></li>
-            <li><a href="software.html" class="active">软件平台</a></li>
-            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="3d-structure.html">3D Structure</a></li>
+            <li><a href="software.html" class="active">Software Platform</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
+    <!-- Language Switcher - Fixed position -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active" id="lang-en">EN</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn" id="lang-zh">中文</button>
+    </div>
+
     <main>
         <section id="software-intro">
-            <h2>minifus控制与分析软件平台</h2>
+            <h2 data-en="minifus Control and Analysis Software Platform" data-zh="minifus控制与分析软件平台">minifus Control and Analysis Software Platform</h2>
             <div class="content-grid">
                 <div class="text-content">
-                    <h3>基于MATLAB的强大交互界面</h3>
-                    <p>我们提供了一套专门针对功能超声成像的控制与分析软件，该软件基于MATLAB环境开发，为用户提供了直观的图形用户界面（GUI）和实时处理能力。该平台专注于实时功能成像，不支持原始数据保存，但能够提供高效的功能成像分析。</p>
-                    <h4>主要功能：</h4>
+                    <h3 data-en="Powerful MATLAB-based Interactive Interface" data-zh="基于MATLAB的强大交互界面">Powerful MATLAB-based Interactive Interface</h3>
+                    <p data-en="We provide a specialized control and analysis software for functional ultrasound imaging, developed based on the MATLAB environment, offering users an intuitive graphical user interface (GUI) and real-time processing capabilities. The platform focuses on real-time functional imaging, does not support raw data saving, but provides efficient functional imaging analysis." data-zh="我们提供了一套专门针对功能超声成像的控制与分析软件，该软件基于MATLAB环境开发，为用户提供了直观的图形用户界面（GUI）和实时处理能力。该平台专注于实时功能成像，不支持原始数据保存，但能够提供高效的功能成像分析。">We provide a specialized control and analysis software for functional ultrasound imaging, developed based on the MATLAB environment, offering users an intuitive graphical user interface (GUI) and real-time processing capabilities. The platform focuses on real-time functional imaging, does not support raw data saving, but provides efficient functional imaging analysis.</p>
+                    <h4 data-en="Main Features:" data-zh="主要功能：">Main Features:</h4>
                     <ul>
-                        <li>实时功能成像显示与参数配置</li>
-                        <li>实时数据处理与分析</li>
-                        <li>内置功能超声成像算法（血流检测、功能成像等）</li>
-                        <li>实时图像重建与显示</li>
-                        <li>功能成像结果实时导出</li>
+                        <li data-en="Real-time functional imaging display and parameter configuration" data-zh="实时功能成像显示与参数配置">Real-time functional imaging display and parameter configuration</li>
+                        <li data-en="Real-time data processing and analysis" data-zh="实时数据处理与分析">Real-time data processing and analysis</li>
+                        <li data-en="Built-in functional ultrasound imaging algorithms (blood flow detection, functional imaging, etc.)" data-zh="内置功能超声成像算法（血流检测、功能成像等）">Built-in functional ultrasound imaging algorithms (blood flow detection, functional imaging, etc.)</li>
+                        <li data-en="Real-time image reconstruction and display" data-zh="实时图像重建与显示">Real-time image reconstruction and display</li>
+                        <li data-en="Real-time export of functional imaging results" data-zh="功能成像结果实时导出">Real-time export of functional imaging results</li>
+                        <li data-en="Open source GPU real-time library calls, supporting CUDA/OpenCL parallel computing" data-zh="开源GPU实时库调用，支持CUDA/OpenCL并行计算">Open source GPU real-time library calls, supporting CUDA/OpenCL parallel computing</li>
                     </ul>
-                    <a href="downloads/Dolphin_Lite_64_Alpha_V1.2.0.rar" download="Dolphin_Lite_64_Alpha_V1.2.0.rar" class="button">下载最新版软件 (.rar)</a>
+                    <a href="downloads/Dolphin_Lite_64_Alpha_V1.2.0.rar" download="Dolphin_Lite_64_Alpha_V1.2.0.rar" class="button" data-en="Download Latest Software (.rar)" data-zh="下载最新版软件 (.rar)">Download Latest Software (.rar)</a>
                 </div>
                 <div class="image-content">
-                    <img src="images/matlab-gui.png" alt="MATLAB软件界面">
-                    <p class="caption">软件主界面</p>
+                    <img src="images/matlab-gui.png" alt="MATLAB software interface">
+                    <p class="caption" data-en="Software main interface" data-zh="软件主界面">Software main interface</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="open-source-gpu">
+            <h2 data-en="PlaneBeam_GPU_RealData_MEX Open Source MEX Program" data-zh="PlaneBeam_GPU_RealData_MEX 开源MEX程序">PlaneBeam_GPU_RealData_MEX Open Source MEX Program</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3 data-en="High-Performance GPU Parallel Computing Solution" data-zh="高性能GPU并行计算解决方案">High-Performance GPU Parallel Computing Solution</h3>
+                    <p data-en="PlaneBeam_GPU_RealData_MEX is a MEX program we developed for calling real-time imaging GPU dynamic libraries, specifically providing high-performance parallel computing support for minifus platform's functional ultrasound imaging. The program is based on CUDA/OpenCL technology, fully utilizing modern GPU parallel computing capabilities for real-time data processing and image reconstruction." data-zh="PlaneBeam_GPU_RealData_MEX是我们开发的调用实时成像GPU动态库的MEX程序，专门为minifus平台的功能超声成像提供高性能并行计算支持。该程序基于CUDA/OpenCL技术，能够充分利用现代GPU的并行计算能力，实现实时数据处理和图像重建。">PlaneBeam_GPU_RealData_MEX is a MEX program we developed for calling real-time imaging GPU dynamic libraries, specifically providing high-performance parallel computing support for minifus platform's functional ultrasound imaging. The program is based on CUDA/OpenCL technology, fully utilizing modern GPU parallel computing capabilities for real-time data processing and image reconstruction.</p>
+                    
+                    <h4 data-en="Open Source Features:" data-zh="开源特性：">Open Source Features:</h4>
+                    <ul>
+                        <li><strong data-en="Open Source Call Interface" data-zh="开源调用接口">Open Source Call Interface</strong><span data-en=": Provides complete MEX call interface source code with custom configuration support" data-zh="：提供完整的MEX调用接口源码，支持自定义配置">: Provides complete MEX call interface source code with custom configuration support</span></li>
+                        <li><strong data-en="Flexible Configuration System" data-zh="灵活配置系统">Flexible Configuration System</strong><span data-en=": Open source configuration parameters and calling methods for easy user customization" data-zh="：开源配置参数和调用方式，便于用户定制">: Open source configuration parameters and calling methods for easy user customization</span></li>
+                        <li><strong data-en="MATLAB Integration" data-zh="MATLAB集成">MATLAB Integration</strong><span data-en=": Provides MATLAB MEX interface for seamless integration into MATLAB environment" data-zh="：提供MATLAB MEX接口，无缝集成到MATLAB环境">: Provides MATLAB MEX interface for seamless integration into MATLAB environment</span></li>
+                        <li><strong data-en="Real-time Plane Wave Imaging" data-zh="实时平面波成像">Real-time Plane Wave Imaging</strong><span data-en=": Supports real-time image reconstruction in plane wave transmission mode" data-zh="：支持平面波发射模式下的实时图像重建">: Supports real-time image reconstruction in plane wave transmission mode</span></li>
+                        <li><strong data-en="High-performance Optimization" data-zh="高性能优化">High-performance Optimization</strong><span data-en=": Deep optimization for real-time processing" data-zh="：针对实时处理进行了深度优化">: Deep optimization for real-time processing</span></li>
+                    </ul>
+                    
+                    <a href="https://github.com/your-repo/PlaneBeam_GPU_RealData_MEX" class="button" target="_blank" data-en="View Open Source Code" data-zh="查看开源代码">View Open Source Code</a>
+                </div>
+                <div class="image-content">
+                    <img src="images/PlaneBeam_GPU_RealData_MEX.png" alt="PlaneBeam_GPU_RealData_MEX program interface">
+                    <p class="caption" data-en="PlaneBeam_GPU_RealData_MEX" data-zh="PlaneBeam_GPU_RealData_MEX">PlaneBeam_GPU_RealData_MEX</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>中国科学院声学研究所</p>
+        <p>Institute of Acoustics, Chinese Academy of Sciences</p>
         <p>&copy; 2025 minifus. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en][data-zh]').forEach(element => {
+                element.textContent = element.getAttribute('data-' + lang);
+            });
+            
+            // Update navigation
+            const navItems = {
+                'en': ['Home', '3D Structure', 'Software Platform', 'Contact Us'],
+                'zh': ['首页', '3D结构', '软件平台', '联系我们']
+            };
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach((link, index) => {
+                if (link.textContent !== '') {
+                    link.textContent = navItems[lang][index];
+                }
+            });
+            
+            // Update page title and header
+            if (lang === 'zh') {
+                document.title = '软件平台 - minifus功能超声成像平台';
+                document.querySelector('h1').textContent = 'minifus功能超声成像平台';
+                document.querySelector('header p').textContent = '一款面向功能超声成像领域科学家的高性能开放式研究平台';
+            } else {
+                document.title = 'Software Platform - minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('h1').textContent = 'minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('header p').textContent = 'A high-performance open research platform for functional ultrasound imaging scientists';
+            }
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language to English
+            switchLanguage('en');
+        });
+    </script>
 
 </body>
 </html>

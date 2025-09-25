@@ -1,55 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minifus功能超声成像平台</title>
+    <title>minifus Functional Ultrasound Imaging Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>minifus功能超声成像平台</h1>
-        <p>一款面向功能超声成像领域科学家的高性能开放式研究平台</p>
+        <h1>minifus Functional Ultrasound Imaging Platform</h1>
+        <p>A high-performance open research platform for functional ultrasound imaging scientists</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">首页</a></li>
-            <li><a href="3d-structure.html">3D结构</a></li>
-            <li><a href="software.html">软件平台</a></li>
-            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="3d-structure.html">3D Structure</a></li>
+            <li><a href="software.html">Software Platform</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
+    <!-- Language Switcher - Fixed position -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active" id="lang-en">EN</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn" id="lang-zh">中文</button>
+    </div>
+
     <main>
         <section id="intro">
-            <h2>欢迎来到minifus功能超声成像平台</h2>
+            <h2 data-en="Welcome to minifus Functional Ultrasound Imaging Platform" data-zh="欢迎来到minifus功能超声成像平台">Welcome to minifus Functional Ultrasound Imaging Platform</h2>
             <div class="content-grid">
                 <div class="text-content">
-                    <p>minifus是一款专为前沿科学研究设计的高性能、开放式超声平台。我们致力于为科学家提供强大的工具，以探索超声成像的无限可能。</p>
-                    <p>本网站将向您介绍我们的设备简介、3D结构以及软件相关介绍。</p>
-                    <a href="3d-structure.html" class="button">查看3D结构</a>
+                    <p data-en="minifus is a high-performance, open ultrasound platform designed for cutting-edge scientific research. We are committed to providing scientists with powerful tools to explore the infinite possibilities of ultrasound imaging." data-zh="minifus是一款专为前沿科学研究设计的高性能、开放式超声平台。我们致力于为科学家提供强大的工具，以探索超声成像的无限可能。">minifus is a high-performance, open ultrasound platform designed for cutting-edge scientific research. We are committed to providing scientists with powerful tools to explore the infinite possibilities of ultrasound imaging.</p>
+                    <p data-en="This website will introduce you to our device overview, 3D structure, and software platform." data-zh="本网站将向您介绍我们的设备简介、3D结构以及软件相关介绍。">This website will introduce you to our device overview, 3D structure, and software platform.</p>
+                    
+                    <h3 data-en="Platform Features" data-zh="平台特色">Platform Features</h3>
+                    <ul>
+                        <li><strong data-en="Real-time Functional Imaging" data-zh="实时功能成像">Real-time Functional Imaging</strong><span data-en=": Supports real-time brain functional imaging without saving raw data" data-zh="：支持实时脑功能成像，无需保存原始数据">: Supports real-time brain functional imaging without saving raw data</span></li>
+                        <li><strong data-en="High-precision Detection" data-zh="高精度检测">High-precision Detection</strong><span data-en=": Capable of detecting micro-blood flow changes with spatiotemporal resolution of 100μm/100ms" data-zh="：能够检测微血流变化，时空分辨率达到100μm/100ms">: Capable of detecting micro-blood flow changes with spatiotemporal resolution of 100μm/100ms</span></li>
+                        <li><strong data-en="Open Platform" data-zh="开放平台">Open Platform</strong><span data-en=": Flexible MATLAB-based control and data analysis environment, also supports C/C++ software development" data-zh="：基于MATLAB的灵活控制与数据分析环境，同时也支持C/C++软件开发">: Flexible MATLAB-based control and data analysis environment, also supports C/C++ software development</span></li>
+                    </ul>
+                    
+                    <h3 data-en="Technical Advantages" data-zh="技术优势">Technical Advantages</h3>
+                    <p data-en="The minifus platform adopts ultrafast ultrasound imaging technology, abandoning traditional line-by-line scanning methods. Through single-shot emission covering the entire imaging area, combined with advanced algorithms, it achieves high-frame-rate, high-resolution real-time functional imaging." data-zh="minifus平台采用超快超声成像技术，摒弃传统逐线扫描方式，通过单次发射覆盖整个成像区域，结合先进算法实现高帧率、高分辨率的实时功能成像。">The minifus platform adopts ultrafast ultrasound imaging technology, abandoning traditional line-by-line scanning methods. Through single-shot emission covering the entire imaging area, combined with advanced algorithms, it achieves high-frame-rate, high-resolution real-time functional imaging.</p>
+                    
+                    <a href="3d-structure.html" class="button" data-en="View 3D Structure" data-zh="查看3D结构">View 3D Structure</a>
                 </div>
                 <div class="image-content">
-                    <img src="images/platform-overview.jpg" alt="minifus-128 设备">
+                    <img src="images/platform-overview.jpg" alt="minifus-128 device">
+                    <img src="images/app-brain-function-map.png" alt="Brain function map" style="margin-top: 1rem;">
                 </div>
             </div>
         </section>
 
         <section id="features">
-            <h2>核心特性</h2>
+            <h2 data-en="Core Features" data-zh="核心特性">Core Features</h2>
             <div class="gallery">
                 <div class="feature-item">
-                    <h3><a href="3d-structure.html">3D结构</a></h3>
-                    <p>在线查看设备的高精度三维结构模型。</p>
+                    <h3><a href="3d-structure.html" data-en="3D Structure" data-zh="3D结构">3D Structure</a></h3>
+                    <p data-en="View high-precision 3D structural models of the device online." data-zh="在线查看设备的高精度三维结构模型。">View high-precision 3D structural models of the device online.</p>
                 </div>
                 <div class="feature-item">
-                    <h3><a href="software.html">软件平台</a></h3>
-                    <p>基于MATLAB的强大控制与分析软件平台。</p>
+                    <h3><a href="software.html" data-en="Software Platform" data-zh="软件平台">Software Platform</a></h3>
+                    <p data-en="Powerful MATLAB-based control and analysis software platform." data-zh="基于MATLAB的强大控制与分析软件平台。">Powerful MATLAB-based control and analysis software platform.</p>
                 </div>
                 <div class="feature-item">
-                    <h3><a href="contact.html">技术支持</a></h3>
-                    <p>专业的技术支持团队，为您提供全方位的服务。</p>
+                    <h3><a href="contact.html" data-en="Technical Support" data-zh="技术支持">Technical Support</a></h3>
+                    <p data-en="Professional technical support team providing comprehensive services." data-zh="专业的技术支持团队，为您提供全方位的服务。">Professional technical support team providing comprehensive services.</p>
                 </div>
             </div>
         </section>
@@ -57,9 +75,52 @@
     </main>
 
     <footer>
-        <p>中国科学院声学研究所</p>
+        <p data-en="Institute of Acoustics, Chinese Academy of Sciences" data-zh="中国科学院声学研究所">Institute of Acoustics, Chinese Academy of Sciences</p>
         <p>&copy; 2025 minifus. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en][data-zh]').forEach(element => {
+                element.textContent = element.getAttribute('data-' + lang);
+            });
+            
+            // Update navigation
+            const navItems = {
+                'en': ['Home', '3D Structure', 'Software Platform', 'Contact Us'],
+                'zh': ['首页', '3D结构', '软件平台', '联系我们']
+            };
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach((link, index) => {
+                if (link.textContent !== '') {
+                    link.textContent = navItems[lang][index];
+                }
+            });
+            
+            // Update page title and header
+            if (lang === 'zh') {
+                document.title = 'minifus功能超声成像平台';
+                document.querySelector('h1').textContent = 'minifus功能超声成像平台';
+                document.querySelector('header p').textContent = '一款面向功能超声成像领域科学家的高性能开放式研究平台';
+            } else {
+                document.title = 'minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('h1').textContent = 'minifus Functional Ultrasound Imaging Platform';
+                document.querySelector('header p').textContent = 'A high-performance open research platform for functional ultrasound imaging scientists';
+            }
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language to English
+            switchLanguage('en');
+        });
+    </script>
 
 </body>
 </html>
